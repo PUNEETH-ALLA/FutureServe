@@ -27,3 +27,9 @@
     background: #00c6ff;
     color: white;
 }
+/* home.css */
+.home-hero {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+}

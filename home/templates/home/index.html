@@ -1,54 +1,17 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
-{% block title %}FutureTechServe | Leading the Future{% endblock %}
+{% block title %}Home | FutureTechServe{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="hero">
+<!-- 🔹 Load home.css -->
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<section class="home-hero">
     <div class="container text-center">
-        <h1 class="display-4 fw-bold">Empowering Innovation</h1>
-        <p class="lead">FutureTechServe drives digital transformation with cutting-edge solutions.</p>
-        <a href="/contact/" class="btn btn-primary btn-lg">Get Started</a>
+        <h1 class="display-4 fw-bold">Welcome to FutureTechServe</h1>
+        <p class="lead">Empowering businesses with cutting-edge technology.</p>
     </div>
 </section>
-
-<!-- Services Section -->
-<section class="services py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold">Our Expertise</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="service-card">
-                    <h4>IT Staffing & Consulting</h4>
-                    <p>Providing top-tier IT professionals.</p>
-                    <a href="{% url 'services_detail' 'it-staffing' %}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <h4>Application Development</h4>
-                    <p>Custom software solutions for businesses.</p>
-                    <a href="{% url 'services_detail' 'app-development' %}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <h4>Tech Support</h4>
-                    <p>Ensuring smooth IT operations for businesses.</p>
-                    <a href="{% url 'services_detail' 'tech-support' %}" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer text-center py-4">
-    <div class="container">
-        <p>© 2025 FutureTechServe. All rights reserved.</p>
-        <p><a href="/contact/">Contact Us</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
-    </div>
-</footer>
 
 {% endblock %}

@@ -1,0 +1,118 @@
+/* Home Page Independent Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #00c6ff !important;
+    text-shadow: 0 0 8px rgba(0, 198, 255, 0.8);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background: white;
+    color: #0072ff;
+    transition: 0.4s;
+    border: none;
+}
+
+.hero .btn:hover {
+    background: #00c6ff;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(120deg, #1e293b, #0f172a);
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00c6ff;
+}
+
+/* Service Cards */
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}

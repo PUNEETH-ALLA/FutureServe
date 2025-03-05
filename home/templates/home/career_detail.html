@@ -1,0 +1,41 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Job Details | FutureTechServe{% endblock %}
+
+{% block content %}
+<!-- Job Details Section -->
+<section class="career-detail-hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">{{ job.title }}</h1>
+        <p class="lead">Join FutureTechServe and contribute to innovative solutions.</p>
+    </div>
+</section>
+
+<section class="job-description">
+    <div class="container">
+        <h2 class="fw-bold text-center">Job Description</h2>
+        <p><strong>Location:</strong> {{ job.location }}</p>
+        <p><strong>Experience Required:</strong> {{ job.experience }}</p>
+        <p>{{ job.description }}</p>
+
+        <h3>Key Responsibilities:</h3>
+        <ul>
+            {% for responsibility in job.responsibilities %}
+                <li>{{ responsibility }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Requirements:</h3>
+        <ul>
+            {% for requirement in job.requirements %}
+                <li>{{ requirement }}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="apply-section text-center">
+            <button class="apply-btn">Apply Now</button>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

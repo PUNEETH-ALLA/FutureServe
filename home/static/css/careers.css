@@ -1,0 +1,96 @@
+/* Careers Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1e293b, #0f172a);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Careers Hero Section */
+.careers-hero {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.careers-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Job Openings */
+.job-openings {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.job-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.job-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.job-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.job-details {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.apply-btn {
+    background: #00c6ff;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.apply-btn:hover {
+    background: #0072ff;
+}
+
+/* Career Detail Page Styling */
+.career-detail-hero {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.job-description {
+    padding: 50px 20px;
+}
+
+.job-description h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00c6ff;
+}
+
+.job-description ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.apply-section {
+    text-align: center;
+    margin-top: 20px;
+}

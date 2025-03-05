@@ -1,0 +1,66 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f172a, #1e293b);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Header */
+.industries-header {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.industries-subheader {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #b0bec5;
+    margin-bottom: 40px;
+}
+
+/* Industry Expertise Section */
+.industry-expertise {
+    text-align: center;
+    font-size: 2rem;
+    color: #0072ff;
+    margin-bottom: 30px;
+}
+
+/* Industry Grid */
+.industry-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.industry-card {
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.industry-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.industry-card p {
+    font-size: 1rem;
+    color: #d0d0d0;
+    margin-top: 10px;
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
+}

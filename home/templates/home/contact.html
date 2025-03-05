@@ -1,0 +1,102 @@
+{% extends 'home/base.html' %}
+{% block title %}Contact Us | FutureTechServe{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="contact-hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Let's Connect!</h1>
+        <p class="lead">Have a question? Reach out, and we’ll be happy to assist you.</p>
+    </div>
+</section>
+
+<!-- Contact Details -->
+<section class="contact-details">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>hr@futuretechserve.com</p>
+            </div>
+            <div class="col-md-4 contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <h4>Phone</h4>
+                <p>+91 7036129898</p>
+            </div>
+            <div class="col-md-4 contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Address</h4>
+                <p>1-27, Seethampeta, Khammam, Telangana, 507208, India</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form">
+    <div class="container">
+        <h2 class="text-center">Send Us a Message</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                <small class="error-message" id="emailError"></small>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Google Map -->
+<section class="google-map">
+    <div class="container text-center">
+        <h2>Find Us Here</h2>
+        <iframe
+            id="map"
+            width="100%"
+            height="400"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+            loading="lazy"
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=1-27+Seethampeta+Khammam+Telangana+India">
+        </iframe>
+    </div>
+</section>
+
+<!-- Live Chat Button -->
+<button class="chat-button" onclick="startChat()">💬 Live Chat</button>
+
+<script>
+    function startChat() {
+        alert("Live Chat feature is coming soon!");
+    }
+
+    // Email validation
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        var email = document.getElementById("email").value;
+        var emailError = document.getElementById("emailError");
+
+        if (!email.includes("@")) {
+            emailError.textContent = "Please enter a valid email.";
+            e.preventDefault();
+        } else {
+            emailError.textContent = "";
+        }
+    });
+</script>
+
+{% endblock %}

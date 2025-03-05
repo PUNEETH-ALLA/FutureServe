@@ -1,0 +1,67 @@
+{% extends 'home/base.html' %} {% block title %}Our Services | FutureTechServe{%
+endblock %} {% block content %}
+<div class="container text-center">
+  <h1>Our Services</h1>
+  <p>
+    Explore the comprehensive IT solutions we provide to empower businesses.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="service-card">
+        <h4>IT Staffing & Consulting</h4>
+        <p>Providing top-tier IT professionals.</p>
+        <a
+          href="{% url 'services_detail' 'it-staffing' %}"
+          class="btn btn-primary"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card">
+        <h4>Application Development</h4>
+        <p>Custom software solutions for businesses.</p>
+        <a
+          href="{% url 'services_detail' 'app-development' %}"
+          class="btn btn-primary"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card">
+        <h4>Application Maintenance</h4>
+        <p>Ongoing support and system updates.</p>
+        <a
+          href="{% url 'services_detail' 'app-maintenance' %}"
+          class="btn btn-primary"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card">
+        <h4>Technical Support</h4>
+        <p>Ensuring smooth IT operations for businesses.</p>
+        <a
+          href="{% url 'services_detail' 'tech-support' %}"
+          class="btn btn-primary"
+          >Learn More</a
+        >
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card">
+        <h4>Personal Training</h4>
+        <p>Upskill your team with specialized training programs.</p>
+        <a
+          href="{% url 'services_detail' 'personal-training' %}"
+          class="btn btn-primary"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
